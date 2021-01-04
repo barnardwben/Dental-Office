@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;CACpC;;AAED,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,MAAM;CAClB",
+    "sources": [
+        "dental-office.scss"
+    ],
+    "names": [],
+    "file": "dental-office.css"
+}
