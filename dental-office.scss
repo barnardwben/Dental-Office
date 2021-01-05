@@ -6,4 +6,25 @@ body {
     padding: 0 20px; 
 }
 
+// Index 
 
+#header-index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #header-img {
+    width: 800px;
+    }
+    .header-text {
+    align-self: center;
+    
+    h1 {
+    font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 2rem; 
+        color: #ee8992; 
+    }
+    }
+    }
