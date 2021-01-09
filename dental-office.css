@@ -8,6 +8,7 @@ body {
 
 .nav-item {
   padding: 0 20px;
+  color: white;
 }
 
 #header-index {
@@ -50,11 +51,10 @@ body {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   margin-top: 40px;
-  height: 1150px;
+  height: auto;
 }
 
 #main-index .services .service-box h3 {
-  margin-bottom: 20px;
   font-size: 2.7rem;
   letter-spacing: 1px;
 }
@@ -84,5 +84,9 @@ body {
 #main-index .services .service-box-colored #service-list li a {
   text-decoration: none;
   color: white;
+}
+
+#main-index .services .service-box-white .service-box-img {
+  width: 100%;
 }
 /*# sourceMappingURL=dental-office.css.map */
