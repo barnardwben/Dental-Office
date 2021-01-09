@@ -1,5 +1,5 @@
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lora', serif;
     background-image: url(/images/header-background-svg.svg);
     background-repeat: no-repeat; 
     background-size: contain;
@@ -36,56 +36,62 @@ body {
 
 // Index Main
 
+h2 { 
+    margin-top: 50px;  
+    font-size: 3rem; 
+}
+
+hr {
+    border: 1px solid  #558b7ef5; 
+    width: 20%; 
+    margin: 10px auto; 
+}
+
 #main-index {
-    h2 { 
-        margin-top: 400px; 
-        font-size: 3rem; 
-    }
-
-    hr {
-        border: 1px solid  #558b7ef5; 
-        width: 20%; 
-        margin: 10px auto; 
-    }
-
     .services {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        margin-top: 40px; 
-        height: auto;  
-
-        .service-box {
-            h3 { 
-                font-size: 2.7rem; 
-                letter-spacing: 1px; 
-            }
+        #first-h1 {
+            margin-top: 400px; 
         }
+        .service-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-top: 40px; 
+            height: auto;  
 
-        .service-box-colored {
-            background-color: #f36e4c;   
-            color: white; 
-            padding-top: 20px; 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; 
-            text-align: justify;
-            font-size: 1.3rem;  
-            padding: 0px 50px; 
+            .service-box {
+                h3 { 
+                    font-size: 2.7rem; 
+                    letter-spacing: 1px; 
+                }
+            }
 
-            #service-list {
-                li {
-                    a {
-                        text-decoration: none; 
-                        color: white; 
+            .service-box-colored {
+                background-color: #f36e4c;   
+                color: white; 
+                padding-top: 20px; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                text-align: justify;
+                font-size: 1.3rem;  
+                padding: 0px 50px; 
+
+                #service-list {
+                    li {
+                        a {
+                            text-decoration: none; 
+                            color: white; 
+                        }
                     }
                 }
             }
-        }
 
-        .service-box-white {
-            .service-box-img {
-                width: 100%;    
+            .service-box-white { 
+                .service-box-img {
+                    width: 100%;    
+                    opacity: .8; 
+                }
             }
         }
     }

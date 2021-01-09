@@ -1,5 +1,5 @@
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', serif;
   background-image: url(/images/header-background-svg.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,18 +34,22 @@ body {
   color: #f36e4c;
 }
 
-#main-index h2 {
-  margin-top: 400px;
+h2 {
+  margin-top: 50px;
   font-size: 3rem;
 }
 
-#main-index hr {
+hr {
   border: 1px solid  #558b7ef5;
   width: 20%;
   margin: 10px auto;
 }
 
-#main-index .services {
+#main-index .services #first-h1 {
+  margin-top: 400px;
+}
+
+#main-index .services .service-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -54,12 +58,12 @@ body {
   height: auto;
 }
 
-#main-index .services .service-box h3 {
+#main-index .services .service-container .service-box h3 {
   font-size: 2.7rem;
   letter-spacing: 1px;
 }
 
-#main-index .services .service-box-colored {
+#main-index .services .service-container .service-box-colored {
   background-color: #f36e4c;
   color: white;
   padding-top: 20px;
@@ -81,12 +85,13 @@ body {
   padding: 0px 50px;
 }
 
-#main-index .services .service-box-colored #service-list li a {
+#main-index .services .service-container .service-box-colored #service-list li a {
   text-decoration: none;
   color: white;
 }
 
-#main-index .services .service-box-white .service-box-img {
+#main-index .services .service-container .service-box-white .service-box-img {
   width: 100%;
+  opacity: .8;
 }
 /*# sourceMappingURL=dental-office.css.map */
