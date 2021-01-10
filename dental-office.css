@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   background-image: url(/images/header-background-svg.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,13 +34,37 @@ body {
   color: #f36e4c;
 }
 
+#header-index .header-text .get-in-touch-btn {
+  font-size: 1.3rem;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #cc39cc, #8a088a);
+  color: #fff;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.212);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.212);
+}
+
+#header-index .header-text .get-in-touch-btn:hover {
+  opacity: 0.8;
+}
+
+#header-index .header-text .get-in-touch-btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
+}
+
 h2 {
   margin-top: 50px;
   font-size: 3rem;
 }
 
 hr {
-  border: 1px solid  #558b7ef5;
+  border: 1px solid #558b7ef5;
   width: 20%;
   margin: 10px auto;
 }
@@ -92,6 +116,6 @@ hr {
 
 #main-index .services .service-container .service-box-white .service-box-img {
   width: 100%;
-  opacity: .8;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=dental-office.css.map */
