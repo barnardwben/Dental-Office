@@ -123,7 +123,7 @@ hr {
   color: #4f5964;
 }
 
-#main-index .services #first-h1 {
+#main-index .services {
   margin-top: 400px;
 }
 
@@ -142,7 +142,8 @@ hr {
 }
 
 #main-index .services .service-container .service-box-colored {
-  background-color: #f36e4c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f36e4c), to(#d34060));
+  background: linear-gradient(180deg, #f36e4c, #d34060);
   color: white;
   padding-top: 20px;
   display: -webkit-box;

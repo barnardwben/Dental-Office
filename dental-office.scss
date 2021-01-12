@@ -116,9 +116,7 @@ hr {
   }
 
   .services {
-    #first-h1 {
-      margin-top: 400px;
-    }
+    margin-top: 400px;
     .service-container {
       display: grid;
       grid-template-columns: 50% 50%;
@@ -133,7 +131,7 @@ hr {
       }
 
       .service-box-colored {
-        background-color: #f36e4c;
+        background: linear-gradient(180deg, #f36e4c, #d34060);
         color: white;
         padding-top: 20px;
         display: flex;
