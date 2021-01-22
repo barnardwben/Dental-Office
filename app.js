@@ -1,9 +1,24 @@
 // DOM VARIABLES
 const cardContainer = document.querySelector(".card-container");
-const cardAnimate = document.querySelector(".card-template");
-
+const serviceInfo = document.querySelector(".first-ani");
+const serviceInfoTwo = document.querySelector(".second-ani");
 //Event Listeners
-
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 1220) {
+    serviceInfo.classList.add("appearing");
+    serviceInfo.classList.remove("hide");
+  }
+  if (window.scrollY > 1920) {
+    console.log("working");
+    serviceInfoTwo.classList.add("appearing");
+    serviceInfoTwo.classList.remove("hide");
+  } else if (window.scrollY < 10) {
+    serviceInfo.classList.remove("appearing");
+    serviceInfo.classList.add("hide");
+    serviceInfoTwo.classList.remove("appearing");
+    serviceInfoTwo.classList.add("hide");
+  }
+});
 // CARD CLASS
 class Card {
   constructor(id, title, icon, description) {
@@ -49,6 +64,7 @@ for (card of cardArr) {
       </section>
         `;
   cardContainer.appendChild(cardDiv);
+  // Adding an Event Listener to the card elements
   window.addEventListener("scroll", () => {
     if (window.scrollY > 120) {
       cardDiv.classList.add("appearing");
