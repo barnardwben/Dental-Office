@@ -89,6 +89,27 @@ hr {
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.212);
       }
 
+      .hide {
+        opacity: 0;
+      }
+
+      .appearing {
+        animation: show;
+        animation-duration: 1.75s;
+        animation-iteration-count: 1;
+      }
+
+      @keyframes show {
+        0% {
+          opacity: 0;
+          transform: translateY(3rem);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0rem);
+        }
+      }
+
       .icon-container {
         border: 1px solid rgb(243, 110, 76);
         border-radius: 50%;
@@ -123,13 +144,6 @@ hr {
       margin-top: 40px;
       height: auto;
 
-      .service-box {
-        h3 {
-          font-size: 2.7rem;
-          letter-spacing: 1px;
-        }
-      }
-
       .service-box-colored {
         background: linear-gradient(180deg, #f36e4c, #d34060);
         color: white;
@@ -142,12 +156,13 @@ hr {
         font-size: 1.3rem;
         padding: 0px 50px;
 
+        .text-center {
+          font-size: 4rem;
+        }
+
         #service-list {
           li {
-            a {
-              text-decoration: none;
-              color: white;
-            }
+            color: #fff;
           }
         }
       }
