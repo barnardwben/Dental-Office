@@ -1,5 +1,8 @@
 // DOM VARIABLES
 const cardContainer = document.querySelector(".card-container");
+const cardAnimate = document.querySelector(".card-template");
+
+//Event Listeners
 
 // CARD CLASS
 class Card {
@@ -37,7 +40,7 @@ for (card of cardArr) {
   let cardDiv = document.createElement("div");
   cardDiv.classList.add("card-template");
   cardDiv.innerHTML = `
-      <div class='icon-container'>
+      <div key=${id} class='icon-container'>
         <img src=${icon} alt='Dental Card Icon' class='card-icon'>
       </div>
       <section class='card-text'>
@@ -46,4 +49,13 @@ for (card of cardArr) {
       </section>
         `;
   cardContainer.appendChild(cardDiv);
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 120) {
+      cardDiv.classList.add("appearing");
+      cardDiv.classList.remove("hide");
+    } else if (window.scrollY < 10) {
+      cardDiv.classList.remove("appearing");
+      cardDiv.classList.add("hide");
+    }
+  });
 }
