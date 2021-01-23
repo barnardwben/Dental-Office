@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lora", serif;
   background-image: url(/images/header-background-svg.svg);
@@ -6,6 +10,23 @@ body {
   width: 100%;
 }
 
+// Nav
+.navbar {
+  position: fixed;
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.navbarScroll {
+  background: linear-gradient(
+    45deg,
+    rgba(243, 109, 76, 0.753),
+    rgba(211, 64, 96, 0.824),
+    rgb(226, 99, 226),
+    rgb(139, 7, 139)
+  );
+  box-shadow: 0px 4px 20px rgba(23, 41, 44, 0.212);
+  z-index: 3;
+}
 .nav-item {
   padding: 0 20px;
   color: white;

@@ -2,8 +2,15 @@
 const cardContainer = document.querySelector(".card-container");
 const serviceInfo = document.querySelector(".first-ani");
 const serviceInfoTwo = document.querySelector(".second-ani");
+const navbar = document.querySelector(".navbar");
 //Event Listeners
 window.addEventListener("scroll", () => {
+  if (window.scrollY > 35) {
+    navbar.classList.add("navbarScroll");
+  }
+  if (window.scrollY < 35) {
+    navbar.classList.remove("navbarScroll");
+  }
   if (window.scrollY > 1220) {
     serviceInfo.classList.add("appearing");
     serviceInfo.classList.remove("hide");
