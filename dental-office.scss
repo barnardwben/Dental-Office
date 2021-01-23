@@ -11,12 +11,16 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 // Nav
 .navbar {
   position: fixed;
   width: 100%;
+  margin: 0 auto;
   transition: 0.5s all ease-in-out;
 }
 .navbarScroll {
@@ -36,7 +40,6 @@ body {
 }
 
 // Index Header
-
 #header-index {
   width: 800px;
   padding-bottom: 70px;
@@ -47,7 +50,7 @@ body {
     animation: show;
     animation-duration: 1.75s;
     animation-iteration-count: 1;
-    left: 8%;
+    margin: 0 1rem;
     align-self: center;
     transition: $transition3milli;
 
@@ -279,6 +282,21 @@ body {
           line-height: 1.8rem;
         }
       }
+      @media only screen and (max-width: 360px) {
+        .card-template {
+          width: 300px;
+          height: 400px;
+          margin: 3rem auto;
+          padding: 0 1rem;
+        }
+        .card-title {
+          font-size: 2rem;
+        }
+        .card-text {
+          font-size: 1.25rem;
+          line-height: 1.8rem;
+        }
+      }
     }
     @media only screen and (max-width: 1170px) {
       .card-container {
@@ -300,6 +318,12 @@ body {
     @media only screen and (max-width: 510px) {
       .card-container {
         top: 12.5rem;
+      }
+    }
+    @media only screen and (max-width: 370px) {
+      .card-container {
+        width: 100%;
+        padding: 0;
       }
     }
   }
