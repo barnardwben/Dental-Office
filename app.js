@@ -1,9 +1,58 @@
 // DOM VARIABLES
 const cardContainer = document.querySelector(".card-container");
-const cardAnimate = document.querySelector(".card-template");
-
+const serviceInfo = document.querySelector(".first-ani");
+const serviceInfoTwo = document.querySelector(".second-ani");
+const navbar = document.querySelector(".navbar");
 //Event Listeners
-
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  console.log(window.innerWidth);
+  if (window.scrollY > 35) {
+    navbar.classList.add("navbarScroll");
+  }
+  if (window.scrollY < 35) {
+    navbar.classList.remove("navbarScroll");
+  }
+  if (window.innerWidth > 1200 && window.scrollY > 1050) {
+    serviceInfo.classList.add("appearing");
+    serviceInfo.classList.remove("hide");
+  }
+  if (window.innerWidth > 810 && window.scrollY > 1130) {
+    serviceInfo.classList.add("appearing");
+    serviceInfo.classList.remove("hide");
+  }
+  if (window.innerWidth > 300 && window.scrollY > 1900) {
+    serviceInfo.classList.add("appearing");
+    serviceInfo.classList.remove("hide");
+  }
+  if (window.innerWidth > 1200 && window.scrollY > 1620) {
+    console.log("working");
+    serviceInfoTwo.classList.add("appearing");
+    serviceInfoTwo.classList.remove("hide");
+  }
+  if (window.innerWidth > 810 && window.scrollY > 2580) {
+    console.log("working");
+    serviceInfoTwo.classList.add("appearing");
+    serviceInfoTwo.classList.remove("hide");
+  }
+  if (window.innerWidth > 600 && window.scrollY > 3400) {
+    serviceInfoTwo.classList.add("appearing");
+    serviceInfoTwo.classList.remove("hide");
+  }
+  if (
+    window.innerWidth > 300 &&
+    window.innerWidth < 600 &&
+    window.scrollY > 2840
+  ) {
+    serviceInfoTwo.classList.add("appearing");
+    serviceInfoTwo.classList.remove("hide");
+  } else if (window.scrollY < 10) {
+    serviceInfo.classList.remove("appearing");
+    serviceInfo.classList.add("hide");
+    serviceInfoTwo.classList.remove("appearing");
+    serviceInfoTwo.classList.add("hide");
+  }
+});
 // CARD CLASS
 class Card {
   constructor(id, title, icon, description) {
@@ -39,16 +88,18 @@ for (card of cardArr) {
   const { id, title, icon, description } = card;
   let cardDiv = document.createElement("div");
   cardDiv.classList.add("card-template");
+
   cardDiv.innerHTML = `
       <div key=${id} class='icon-container'>
         <img src=${icon} alt='Dental Card Icon' class='card-icon'>
       </div>
       <section class='card-text'>
-        <h3>${title}</h3>
+        <h3 class='card-title'>${title}</h3>
         <p>${description}</p>
       </section>
         `;
   cardContainer.appendChild(cardDiv);
+  // Adding an Event Listener to the card elements
   window.addEventListener("scroll", () => {
     if (window.scrollY > 120) {
       cardDiv.classList.add("appearing");
