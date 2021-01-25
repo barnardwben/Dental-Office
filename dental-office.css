@@ -545,8 +545,9 @@ body {
     margin: 0rem auto 0.5rem auto;
   }
   #main-index .services .service-container .service-box-colored p {
-    line-height: 1.1rem;
+    line-height: 1.2rem;
     width: 100%;
+    font-size: 1.25rem;
     text-align: center;
   }
 }
