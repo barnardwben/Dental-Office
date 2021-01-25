@@ -14,6 +14,42 @@ body {
           box-sizing: border-box;
 }
 
+@media only screen and (max-width: 800px) {
+  body {
+    background-image: url(/images/header-background-mobile-svg.svg);
+  }
+}
+
+@media only screen and (max-width: 707px) {
+  body {
+    background-image: url(/images/header-background-mobile-707-svg.svg);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    background-image: url(/images/header-background-mobile-650-svg.svg);
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  body {
+    background-image: url(/images/header-background-mobile-585-svg.svg);
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  body {
+    background-image: url(/images/header-background-mobile-505-svg.svg);
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  body {
+    background-image: url(/images/header-background-mobile-380-svg.svg);
+  }
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -164,6 +200,12 @@ body {
 @media only screen and (max-width: 800px) {
   #header-index .header-text {
     top: 255px;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  #header-index .header-text {
+    top: 125px;
   }
 }
 
