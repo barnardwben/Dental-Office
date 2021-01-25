@@ -17,7 +17,6 @@ toggleBtn.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   // ADDING & REMOVING VISIBILITY TO NAV MENU WHEN scrollY is ABOVE AND BELOW 35
-  console.log(scrollY);
   if (window.scrollY > 35) {
     navbar.classList.add("navbarScroll");
   }

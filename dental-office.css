@@ -102,6 +102,7 @@ body {
 }
 
 #header-index .header-text h1 {
+  color: #414964;
   font-size: 3.5rem;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -225,8 +226,8 @@ body {
 #main-index .main-top .card-container {
   position: relative;
   top: 25rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(#fff), color-stop(#fff), to(#dbc2fd));
-  background: linear-gradient(180deg, #fff, #fff, #fff, #dbc2fd);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(#fff), color-stop(#fff), to(#e1cdfc));
+  background: linear-gradient(180deg, #fff, #fff, #fff, #e1cdfc);
   margin: 5rem 0rem;
   padding: 2rem 7rem;
   display: -webkit-box;
@@ -440,9 +441,9 @@ body {
 }
 
 #main-index .services .service-container .service-box-colored {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 109, 76, 0.753)), to(rgba(211, 64, 96, 0.824)));
-  background: linear-gradient(180deg, rgba(243, 109, 76, 0.753), rgba(211, 64, 96, 0.824));
-  color: white;
+  background: rgba(255, 255, 255, 0.884);
+  border: 0.8rem solid rgba(253, 198, 184, 0.753);
+  color: #414964;
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,7 +475,7 @@ body {
 
 #main-index .services .service-container .service-box-colored .underline {
   width: 200px;
-  background: #fff;
+  background: #faa064;
   padding: 1px;
   margin: 1rem auto 2rem auto;
 }
@@ -549,8 +550,8 @@ body {
 }
 
 #main-index .services .service-container .service-box-colored .ser-border {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 109, 76, 0.753)), to(rgba(211, 64, 96, 0.824)));
-  background: linear-gradient(180deg, rgba(243, 109, 76, 0.753), rgba(211, 64, 96, 0.824));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 128, 98, 0.753)), to(rgba(218, 83, 112, 0.824)));
+  background: linear-gradient(180deg, rgba(250, 128, 98, 0.753), rgba(218, 83, 112, 0.824));
   width: 520px;
   margin: 1rem;
   display: -webkit-box;
@@ -606,8 +607,8 @@ body {
 }
 
 #main-index .services .service-container .service-box-colored .ser-container {
-  background: #fff;
-  color: black;
+  background: white;
+  color: #414964;
   width: 100%;
   margin: 1rem;
   padding: 0.1rem;
@@ -617,8 +618,8 @@ body {
       grid-template-columns: 1fr;
   justify-items: center;
   border-radius: 10px;
-  -webkit-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.329);
-          box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.329);
+  -webkit-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.295);
+          box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.295);
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -787,6 +788,17 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
+@media only screen and (max-width: 501px) {
+  #main-index .services .service-container .service-box-white .service-box-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: none;
+    opacity: 0.8;
+  }
+}
+
 @media only screen and (max-width: 481px) {
   #main-index .services .service-container .service-box-white .service-box-img {
     width: 100%;
@@ -834,7 +846,22 @@ body {
 
 @media only screen and (max-width: 512px) {
   #main-index .services {
-    margin-top: 12rem;
+    margin-top: 12.5rem;
   }
+}
+
+footer {
+  background: #e1cdfc;
+  width: 100%;
+}
+
+.attributes {
+  font-size: 0.1rem;
+  color: white;
+}
+
+.plug {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=dental-office.css.map */
