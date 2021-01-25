@@ -3,16 +3,28 @@ const cardContainer = document.querySelector(".card-container");
 const serviceInfo = document.querySelector(".first-ani");
 const serviceInfoTwo = document.querySelector(".second-ani");
 const navbar = document.querySelector(".navbar");
+const toggleBtn = document.querySelector(".navbar-toggler");
+
 //Event Listeners
+// ADDING VISIBILITY TO NAV MENU WHEN scrollY is below 35 & BURGER BTN IS CLICKED
+toggleBtn.addEventListener("click", () => {
+  if (!toggleBtn.classList.contains("collapsed")) {
+    navbar.classList.add("nav-menu-open");
+  } else {
+    navbar.classList.remove("nav-menu-open");
+  }
+});
+
 window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
-  console.log(window.innerWidth);
+  // ADDING & REMOVING VISIBILITY TO NAV MENU WHEN scrollY is ABOVE AND BELOW 35
+  console.log(scrollY);
   if (window.scrollY > 35) {
     navbar.classList.add("navbarScroll");
   }
   if (window.scrollY < 35) {
     navbar.classList.remove("navbarScroll");
   }
+  // ADDING ANIMATIONS TO SERVICES SECTION LIST
   if (window.innerWidth > 1200 && window.scrollY > 1050) {
     serviceInfo.classList.add("appearing");
     serviceInfo.classList.remove("hide");
@@ -53,6 +65,9 @@ window.addEventListener("scroll", () => {
     serviceInfoTwo.classList.add("hide");
   }
 });
+
+// FUNCTIONS
+
 // CARD CLASS
 class Card {
   constructor(id, title, icon, description) {
@@ -82,12 +97,15 @@ let cardThree = new Card(
   "We understand that choosing where to go for your dental care is a big decision. We encourage you to stop by our office so that we can greet you with welcoming hands. Our doors are always open."
 );
 
+// STORING CARD CLASSES INTO AN ARRAY TO LOOP OVER LATER
 let cardArr = [cardOne, cardTwo, cardThree];
 
+// LOOPING OVER ARRAY TO DISPLAY IT IN OUR HTML
 for (card of cardArr) {
   const { id, title, icon, description } = card;
   let cardDiv = document.createElement("div");
   cardDiv.classList.add("card-template");
+  cardDiv.classList.add("hide");
 
   cardDiv.innerHTML = `
       <div key=${id} class='icon-container'>
@@ -99,7 +117,7 @@ for (card of cardArr) {
       </section>
         `;
   cardContainer.appendChild(cardDiv);
-  // Adding an Event Listener to the card elements
+  // Adding An Event Listener & Animation To Card Elements
   window.addEventListener("scroll", () => {
     if (window.scrollY > 120) {
       cardDiv.classList.add("appearing");
