@@ -65,6 +65,13 @@ body {
   z-index: 3;
 }
 
+.nav-menu-open {
+  background: linear-gradient(45deg, rgba(243, 109, 76, 0.753), rgba(211, 64, 96, 0.824), #e263e2, #8b078b);
+  -webkit-box-shadow: 0px 4px 20px rgba(23, 41, 44, 0.212);
+          box-shadow: 0px 4px 20px rgba(23, 41, 44, 0.212);
+  z-index: 3;
+}
+
 .nav-item {
   padding: 0 20px;
   color: white;

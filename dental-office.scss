@@ -18,35 +18,35 @@ body {
 
 @media only screen and (max-width: 800px) {
   body {
-    background-image:url(/images/header-background-mobile-svg.svg); 
+    background-image: url(/images/header-background-mobile-svg.svg);
   }
 }
 
 @media only screen and (max-width: 707px) {
   body {
-    background-image:url(/images/header-background-mobile-707-svg.svg); 
+    background-image: url(/images/header-background-mobile-707-svg.svg);
   }
 }
 
 @media only screen and (max-width: 650px) {
   body {
-    background-image:url(/images/header-background-mobile-650-svg.svg); 
+    background-image: url(/images/header-background-mobile-650-svg.svg);
   }
 }
 
 @media only screen and (max-width: 585px) {
   body {
-    background-image:url(/images/header-background-mobile-585-svg.svg); 
+    background-image: url(/images/header-background-mobile-585-svg.svg);
   }
 }
 @media only screen and (max-width: 505px) {
   body {
-    background-image:url(/images/header-background-mobile-505-svg.svg); 
+    background-image: url(/images/header-background-mobile-505-svg.svg);
   }
 }
 @media only screen and (max-width: 380px) {
   body {
-    background-image:url(/images/header-background-mobile-380-svg.svg); 
+    background-image: url(/images/header-background-mobile-380-svg.svg);
   }
 }
 
@@ -68,6 +68,19 @@ body {
   box-shadow: 0px 4px 20px rgba(23, 41, 44, 0.212);
   z-index: 3;
 }
+
+.nav-menu-open {
+  background: linear-gradient(
+    45deg,
+    rgba(243, 109, 76, 0.753),
+    rgba(211, 64, 96, 0.824),
+    rgb(226, 99, 226),
+    rgb(139, 7, 139)
+  );
+  box-shadow: 0px 4px 20px rgba(23, 41, 44, 0.212);
+  z-index: 3;
+}
+
 .nav-item {
   padding: 0 20px;
   color: white;
@@ -197,8 +210,8 @@ body {
     }
   }
   @media only screen and (max-width: 585px) {
-    .header-text  {
-      top: 125px; 
+    .header-text {
+      top: 125px;
     }
   }
 }
