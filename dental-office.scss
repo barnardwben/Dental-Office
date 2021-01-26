@@ -86,6 +86,17 @@ body {
   color: white;
 }
 
+.telephone-num {
+  text-decoration: none;
+  color: #fff;
+  transition: $transition3milli;
+}
+
+.telephone-num:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
 // Index Header
 #header-index {
   width: 800px;
@@ -780,6 +791,8 @@ body {
 footer {
   background: rgb(225, 205, 252);
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .attributes {
