@@ -787,6 +787,81 @@ body {
   }
 }
 
+// FREQUENTLY ASKED QUESTIONS SECTION
+.fqa-container {
+  color: rgb(65, 73, 100);
+  width: 90%;
+  background: rgb(236, 236, 236);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+
+  .left-p {
+    font-size: 2.4rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.qna-container {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  transition: $transition3milli;
+}
+
+.question-flex {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-para {
+  margin: auto 0;
+  justify-self: center;
+}
+
+.fas {
+  transition: $transition3milli;
+  cursor: pointer;
+}
+
+.fas:hover {
+  opacity: 0.7;
+}
+
+.hide-me {
+  display: none;
+}
+
+.hide-answer {
+  overflow-y: hidden;
+  height: 0.1rem;
+  transition: $transition3milli;
+}
+
+.telephone-num-two {
+  position: relative;
+  top: 0.25rem;
+  text-decoration: none;
+  color: #fff;
+  margin: 1rem 0;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  background: linear-gradient(45deg, rgb(252, 134, 87), rgb(202, 38, 202));
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.151);
+  transition: $transition3milli;
+}
+
+.telephone-num-two:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
 // FOOTER
 footer {
   background: rgb(225, 205, 252);

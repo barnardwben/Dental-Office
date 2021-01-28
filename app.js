@@ -4,6 +4,7 @@ const serviceInfo = document.querySelector(".first-ani");
 const serviceInfoTwo = document.querySelector(".second-ani");
 const navbar = document.querySelector(".navbar");
 const toggleBtn = document.querySelector(".navbar-toggler");
+const fqaContainer = document.querySelector(".fqa-right");
 
 //Event Listeners
 // ADDING VISIBILITY TO NAV MENU WHEN scrollY is below 35 & BURGER BTN IS CLICKED
@@ -37,12 +38,10 @@ window.addEventListener("scroll", () => {
     serviceInfo.classList.remove("hide");
   }
   if (window.innerWidth > 1200 && window.scrollY > 1620) {
-    console.log("working");
     serviceInfoTwo.classList.add("appearing");
     serviceInfoTwo.classList.remove("hide");
   }
   if (window.innerWidth > 810 && window.scrollY > 2580) {
-    console.log("working");
     serviceInfoTwo.classList.add("appearing");
     serviceInfoTwo.classList.remove("hide");
   }
@@ -64,8 +63,6 @@ window.addEventListener("scroll", () => {
     serviceInfoTwo.classList.add("hide");
   }
 });
-
-// FUNCTIONS
 
 // CARD CLASS
 class Card {
@@ -127,3 +124,35 @@ for (card of cardArr) {
     }
   });
 }
+
+let plusMinusBtns = document.querySelectorAll(".qna-container");
+
+plusMinusBtns.forEach((plusMinus) => {
+  plusMinus.addEventListener("click", (e) => {
+    if (e.target.classList.contains("fa-plus")) {
+      e.target.classList.add("hide-me");
+      e.target.nextElementSibling.classList.remove("hide-me");
+      if (
+        e.target.parentElement.parentElement.nextElementSibling.classList.contains(
+          "hide-answer"
+        )
+      ) {
+        e.target.parentElement.parentElement.nextElementSibling.classList.remove(
+          "hide-answer"
+        );
+      }
+    } else if (e.target.classList.contains("fa-minus")) {
+      e.target.classList.add("hide-me");
+      e.target.previousElementSibling.classList.remove("hide-me");
+      if (
+        !e.target.parentElement.parentElement.nextElementSibling.classList.contains(
+          "hide-answer"
+        )
+      ) {
+        e.target.parentElement.parentElement.nextElementSibling.classList.add(
+          "hide-answer"
+        );
+      }
+    }
+  });
+});
