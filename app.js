@@ -5,6 +5,11 @@ const serviceInfoTwo = document.querySelector(".second-ani");
 const navbar = document.querySelector(".navbar");
 const toggleBtn = document.querySelector(".navbar-toggler");
 const fqaContainer = document.querySelector(".fqa-right");
+const qnaContainerZero = document.querySelector("#ani-zero");
+const qnaContainerOne = document.querySelector("#ani-one");
+const qnaContainerTwo = document.querySelector("#ani-two");
+const qnaContainerThree = document.querySelector("#ani-three");
+const qnaContainerFour = document.querySelector("#ani-four");
 
 //Event Listeners
 // ADDING VISIBILITY TO NAV MENU WHEN scrollY is below 35 & BURGER BTN IS CLICKED
@@ -61,6 +66,36 @@ window.addEventListener("scroll", () => {
     serviceInfo.classList.add("hide");
     serviceInfoTwo.classList.remove("appearing");
     serviceInfoTwo.classList.add("hide");
+  }
+
+  if (window.scrollY > 2500) {
+    qnaContainerZero.classList.add("qnaAniZero");
+
+    qnaContainerOne.classList.add("qnaAniOne");
+
+    qnaContainerTwo.classList.add("qnaAniTwo");
+
+    qnaContainerThree.classList.add("qnaAniThree");
+
+    qnaContainerFour.classList.add("qnaAniFour");
+    setTimeout(() => {
+      qnaContainerZero.classList.remove("hideqna");
+      qnaContainerOne.classList.remove("hideqna");
+      qnaContainerTwo.classList.remove("hideqna");
+      qnaContainerThree.classList.remove("hideqna");
+      qnaContainerFour.classList.remove("hideqna");
+    }, 0500);
+  } else if (window.scrollY < 100) {
+    qnaContainerZero.classList.remove("qnaAniZero");
+    qnaContainerZero.classList.add("hideqna");
+    qnaContainerOne.classList.remove("qnaAniOne");
+    qnaContainerOne.classList.add("hideqna");
+    qnaContainerTwo.classList.remove("qnaAniTwo");
+    qnaContainerTwo.classList.add("hideqna");
+    qnaContainerThree.classList.remove("qnaAniThree");
+    qnaContainerThree.classList.add("hideqna");
+    qnaContainerFour.classList.remove("qnaAniFour");
+    qnaContainerFour.classList.add("hideqna");
   }
 });
 
