@@ -44,6 +44,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 428px) {
+  body {
+    background-image: url(/images/header-background-mobile-428-svg.svg);
+  }
+}
+
 @media only screen and (max-width: 380px) {
   body {
     background-image: url(/images/header-background-mobile-380-svg.svg);
