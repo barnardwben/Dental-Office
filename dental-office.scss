@@ -1,56 +1,62 @@
 // VARIABLE
 $transition3milli: 0.3s all ease-in-out;
+// Color Variables
+$custom-grey: rgb(65, 73, 100);
+$custom-orange: rgb(243, 109, 76);
+$custom-purple: rgb(139, 7, 139); 
 
 * {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Lora", serif;
-  background-image: url(/images/header-background-svg.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+#body-index {
+  background-image: url(/images/header-background-svg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media only screen and (max-width: 800px) {
-  body {
+  #body-index {
     background-image: url(/images/header-background-mobile-svg.svg);
   }
 }
 
 @media only screen and (max-width: 707px) {
-  body {
+  #body-index {
     background-image: url(/images/header-background-mobile-707-svg.svg);
   }
 }
 
 @media only screen and (max-width: 650px) {
-  body {
+  #body-index {
     background-image: url(/images/header-background-mobile-650-svg.svg);
   }
 }
 
 @media only screen and (max-width: 585px) {
-  body {
+  #body-index {
     background-image: url(/images/header-background-mobile-585-svg.svg);
   }
 }
 @media only screen and (max-width: 505px) {
-  body {
+  #body-index {
     background-image: url(/images/header-background-mobile-505-svg.svg);
   }
 }
 @media only screen and (max-width: 428px) {
-  body {
+  #body-index {
     background-image: url(/images/header-background-mobile-428-svg.svg);
   }
 }
 @media only screen and (max-width: 380px) {
-  body {
+  #body-index {
     background-image: url(/images/header-background-mobile-380-svg.svg);
   }
 }
@@ -933,4 +939,37 @@ footer {
 .plug {
   text-decoration: none;
   color: #fff;
+}
+
+// *********************** CONTACT.HTML******************************
+#header-contact {
+  padding-top: 100px;
+  #header-title-contact {
+    h1 {
+      font-size: 3.5rem; 
+      color: rgb(65, 73, 100);
+    }
+  }
+}
+
+.contact-hr {
+  width: 7%;
+  margin: 10px auto;
+  border: 2px solid $custom-orange; 
+  opacity: 1;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 901px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 29px 14px #C9C9C9}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 901px;
 }
