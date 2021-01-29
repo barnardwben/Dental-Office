@@ -813,6 +813,56 @@ body {
   transition: $transition3milli;
 }
 
+.qnaAniZero {
+  animation: rollIn;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+.qnaAniOne {
+  animation: rollIn;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+}
+
+.qnaAniTwo {
+  animation: rollIn;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
+
+.qnaAniThree {
+  animation: rollIn;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.3s;
+}
+
+.qnaAniFour {
+  animation: rollIn;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
+}
+
+.hideqna {
+  opacity: 0;
+}
+
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .question-flex {
   font-size: 1.5rem;
   display: flex;
