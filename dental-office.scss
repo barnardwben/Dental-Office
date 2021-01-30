@@ -816,6 +816,34 @@ body {
     width: 80%;
     margin: 0 auto;
   }
+
+  @media only screen and (max-width: 920px) {
+    .left-p {
+      font-size: 2rem;
+      transition: $transition3milli;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .left-p {
+      font-size: 1.8rem;
+      transition: $transition3milli;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .left-p {
+      font-size: 1.5rem;
+      transition: $transition3milli;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .fqa-container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
 }
 
 .fqa-contact-box {
@@ -841,6 +869,19 @@ body {
 .fqa-contact-btn:hover {
   color: #fff;
   opacity: 0.7;
+}
+
+@media only screen and (max-width: 884px) {
+  .fqa-contact-box {
+    padding: 1.8rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .first-fqa-contact-box {
+    display: none;
+  }
 }
 
 .qna-container {
@@ -907,16 +948,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: $transition3milli;
 }
 
 .question-para {
   margin: auto 0;
   justify-self: center;
+  transition: $transition3milli;
 }
 
 .fas {
   transition: $transition3milli;
   cursor: pointer;
+  transition: $transition3milli;
 }
 
 .fas:hover {
@@ -952,6 +996,44 @@ body {
   opacity: 0.7;
 }
 
+.second-fqa-contact-box {
+  display: none;
+}
+
+@media only screen and (max-width: 884px) {
+  .question-para {
+    font-size: 1.2rem;
+  }
+
+  .fas {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .question-para {
+    font-size: 1rem;
+  }
+
+  .fas {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .second-fqa-contact-box {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .second-fqa-contact-box {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 // FOOTER
 .footer-top-border {
   width: 100%;
@@ -967,6 +1049,18 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  transition: $transition3milli;
+}
+
+@media only screen and (max-width: 550px) {
+  .footer-grid-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0 0.5rem 0;
+  }
+
+  .left-footer {
+    display: none;
+  }
 }
 
 .center-footer {
@@ -974,17 +1068,20 @@ body {
   margin: 0 0 2rem 0;
   justify-self: start;
   padding: 0 2rem;
+  transition: $transition3milli;
 }
 
 .footer-phone-text {
   font-size: 1.1rem;
   color: rgb(150, 181, 211);
   margin: 0;
+  transition: $transition3milli;
 }
 
 .footer-link {
   text-decoration: none;
   color: rgb(205, 229, 252);
+  transition: $transition3milli;
 }
 
 .footer-link:hover {
@@ -997,21 +1094,25 @@ body {
   margin: 1rem 0 0 0;
   font-size: 1.1rem;
   color: rgb(150, 181, 211);
+  transition: $transition3milli;
 }
 
 .right-footer {
   justify-self: start;
   padding: 0 2rem;
+  transition: $transition3milli;
 }
 
 .footer-right-para {
   font-size: 1.3rem;
   color: rgb(205, 229, 252);
+  transition: $transition3milli;
 }
 
 .left-footer {
   justify-self: start;
   align-self: end;
+  transition: $transition3milli;
 }
 
 .footer-bottom-flex {
@@ -1026,6 +1127,7 @@ body {
   background: rgb(72, 84, 116);
   font-size: 0.9rem;
   color: rgb(150, 181, 211);
+  transition: $transition3milli;
 
   a {
     text-decoration: none;
@@ -1057,6 +1159,36 @@ body {
 
 .plug:hover {
   color: rgb(150, 181, 211);
+}
+
+@media only screen and (max-width: 550px) {
+  .right-footer {
+    padding: 0;
+  }
+
+  .footer-right-para {
+    font-size: 1rem;
+    color: rgb(205, 229, 252);
+  }
+
+  .center-footer {
+    font-size: 1.3rem;
+    margin: 0 0 2rem 0;
+    justify-self: start;
+    padding: 0 2rem;
+  }
+
+  .footer-phone-text {
+    font-size: 1rem;
+    color: rgb(150, 181, 211);
+    margin: 0;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(205, 229, 252);
+  }
 }
 
 // *********************** CONTACT.HTML******************************
