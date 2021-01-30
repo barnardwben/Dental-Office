@@ -67,8 +67,90 @@ window.addEventListener("scroll", () => {
     serviceInfoTwo.classList.remove("appearing");
     serviceInfoTwo.classList.add("hide");
   }
+  console.log(window.scrollY);
+  console.log(window.innerWidth);
+  if (window.innerWidth > 1400 && window.scrollY > 2500) {
+    qnaContainerZero.classList.add("qnaAniZero");
 
-  if (window.scrollY > 2500) {
+    qnaContainerOne.classList.add("qnaAniOne");
+
+    qnaContainerTwo.classList.add("qnaAniTwo");
+
+    qnaContainerThree.classList.add("qnaAniThree");
+
+    qnaContainerFour.classList.add("qnaAniFour");
+    setTimeout(() => {
+      qnaContainerZero.classList.remove("hideqna");
+      qnaContainerOne.classList.remove("hideqna");
+      qnaContainerTwo.classList.remove("hideqna");
+      qnaContainerThree.classList.remove("hideqna");
+      qnaContainerFour.classList.remove("hideqna");
+    }, 0500);
+  } else if (window.innerWidth > 1090 && window.scrollY > 2300) {
+    qnaContainerZero.classList.add("qnaAniZero");
+
+    qnaContainerOne.classList.add("qnaAniOne");
+
+    qnaContainerTwo.classList.add("qnaAniTwo");
+
+    qnaContainerThree.classList.add("qnaAniThree");
+
+    qnaContainerFour.classList.add("qnaAniFour");
+    setTimeout(() => {
+      qnaContainerZero.classList.remove("hideqna");
+      qnaContainerOne.classList.remove("hideqna");
+      qnaContainerTwo.classList.remove("hideqna");
+      qnaContainerThree.classList.remove("hideqna");
+      qnaContainerFour.classList.remove("hideqna");
+    }, 0500);
+  } else if (window.innerWidth > 900 && window.scrollY > 4900) {
+    qnaContainerZero.classList.add("qnaAniZero");
+    qnaContainerOne.classList.add("qnaAniOne");
+    qnaContainerTwo.classList.add("qnaAniTwo");
+    qnaContainerThree.classList.add("qnaAniThree");
+    qnaContainerFour.classList.add("qnaAniFour");
+    setTimeout(() => {
+      qnaContainerZero.classList.remove("hideqna");
+      qnaContainerOne.classList.remove("hideqna");
+      qnaContainerTwo.classList.remove("hideqna");
+      qnaContainerThree.classList.remove("hideqna");
+      qnaContainerFour.classList.remove("hideqna");
+    }, 0500);
+  } else if (window.innerWidth > 600 && window.scrollY > 4300) {
+    qnaContainerZero.classList.add("qnaAniZero");
+
+    qnaContainerOne.classList.add("qnaAniOne");
+
+    qnaContainerTwo.classList.add("qnaAniTwo");
+
+    qnaContainerThree.classList.add("qnaAniThree");
+
+    qnaContainerFour.classList.add("qnaAniFour");
+    setTimeout(() => {
+      qnaContainerZero.classList.remove("hideqna");
+      qnaContainerOne.classList.remove("hideqna");
+      qnaContainerTwo.classList.remove("hideqna");
+      qnaContainerThree.classList.remove("hideqna");
+      qnaContainerFour.classList.remove("hideqna");
+    }, 0500);
+  } else if (window.innerWidth > 490 && window.scrollY > 3900) {
+    qnaContainerZero.classList.add("qnaAniZero");
+
+    qnaContainerOne.classList.add("qnaAniOne");
+
+    qnaContainerTwo.classList.add("qnaAniTwo");
+
+    qnaContainerThree.classList.add("qnaAniThree");
+
+    qnaContainerFour.classList.add("qnaAniFour");
+    setTimeout(() => {
+      qnaContainerZero.classList.remove("hideqna");
+      qnaContainerOne.classList.remove("hideqna");
+      qnaContainerTwo.classList.remove("hideqna");
+      qnaContainerThree.classList.remove("hideqna");
+      qnaContainerFour.classList.remove("hideqna");
+    }, 0500);
+  } else if (window.innerWidth > 340 && window.scrollY > 4100) {
     qnaContainerZero.classList.add("qnaAniZero");
 
     qnaContainerOne.classList.add("qnaAniOne");
