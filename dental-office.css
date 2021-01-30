@@ -75,7 +75,7 @@ body {
 }
 
 .nav-menu-open {
-  background: linear-gradient(45deg, rgba(243, 109, 76, 0.753), rgba(211, 64, 96, 0.824), #e263e2, #8b078b);
+  background: linear-gradient(45deg, rgba(0, 159, 187, 0.9), rgba(0, 158, 185, 0.875), rgba(76, 178, 236, 0.875), rgba(54, 107, 187, 0.9));
   -webkit-box-shadow: 0px 4px 20px rgba(23, 41, 44, 0.212);
           box-shadow: 0px 4px 20px rgba(23, 41, 44, 0.212);
   z-index: 3;
