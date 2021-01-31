@@ -29,155 +29,164 @@ window.addEventListener("scroll", () => {
   if (window.scrollY < 35) {
     navbar.classList.remove("navbarScroll");
   }
-  // ADDING ANIMATIONS TO SERVICES SECTION LIST
-  if (window.innerWidth > 1200 && window.scrollY > 1050) {
-    serviceInfo.classList.add("appearing");
-    serviceInfo.classList.remove("hide");
-  }
-  if (window.innerWidth > 810 && window.scrollY > 1130) {
-    serviceInfo.classList.add("appearing");
-    serviceInfo.classList.remove("hide");
-  }
-  if (window.innerWidth > 300 && window.scrollY > 1900) {
-    serviceInfo.classList.add("appearing");
-    serviceInfo.classList.remove("hide");
-  }
-  if (window.innerWidth > 1200 && window.scrollY > 1620) {
-    serviceInfoTwo.classList.add("appearing");
-    serviceInfoTwo.classList.remove("hide");
-  }
-  if (window.innerWidth > 810 && window.scrollY > 2580) {
-    serviceInfoTwo.classList.add("appearing");
-    serviceInfoTwo.classList.remove("hide");
-  }
-  if (window.innerWidth > 600 && window.scrollY > 3400) {
-    serviceInfoTwo.classList.add("appearing");
-    serviceInfoTwo.classList.remove("hide");
-  }
+
+  // ANIMATIONS ONLY FOR INDEX.HTML
   if (
-    window.innerWidth > 300 &&
-    window.innerWidth < 600 &&
-    window.scrollY > 2840
+    window.location.href === "https://smile4docho.netlify.app/" ||
+    window.location.href === "https://smile4docho.netlify.app/#" ||
+    window.location.href === "http://127.0.0.1:5500/index.html" ||
+    window.location.href === "http://127.0.0.1:5500/index.html#"
   ) {
-    serviceInfoTwo.classList.add("appearing");
-    serviceInfoTwo.classList.remove("hide");
-  } else if (window.scrollY < 10) {
-    serviceInfo.classList.remove("appearing");
-    serviceInfo.classList.add("hide");
-    serviceInfoTwo.classList.remove("appearing");
-    serviceInfoTwo.classList.add("hide");
-  }
-  console.log(window.scrollY);
-  console.log(window.innerWidth);
-  if (window.innerWidth > 1400 && window.scrollY > 2500) {
-    qnaContainerZero.classList.add("qnaAniZero");
+    // ADDING ANIMATIONS TO SERVICES SECTION LIST
+    if (window.innerWidth > 1200 && window.scrollY > 1050) {
+      serviceInfo.classList.add("appearing");
+      serviceInfo.classList.remove("hide");
+    }
+    if (window.innerWidth > 810 && window.scrollY > 1130) {
+      serviceInfo.classList.add("appearing");
+      serviceInfo.classList.remove("hide");
+    }
+    if (window.innerWidth > 300 && window.scrollY > 1900) {
+      serviceInfo.classList.add("appearing");
+      serviceInfo.classList.remove("hide");
+    }
+    if (window.innerWidth > 1200 && window.scrollY > 1620) {
+      serviceInfoTwo.classList.add("appearing");
+      serviceInfoTwo.classList.remove("hide");
+    }
+    if (window.innerWidth > 810 && window.scrollY > 2580) {
+      serviceInfoTwo.classList.add("appearing");
+      serviceInfoTwo.classList.remove("hide");
+    }
+    if (window.innerWidth > 600 && window.scrollY > 3400) {
+      serviceInfoTwo.classList.add("appearing");
+      serviceInfoTwo.classList.remove("hide");
+    }
+    if (
+      window.innerWidth > 300 &&
+      window.innerWidth < 600 &&
+      window.scrollY > 2840
+    ) {
+      serviceInfoTwo.classList.add("appearing");
+      serviceInfoTwo.classList.remove("hide");
+    } else if (window.scrollY < 10) {
+      serviceInfo.classList.remove("appearing");
+      serviceInfo.classList.add("hide");
+      serviceInfoTwo.classList.remove("appearing");
+      serviceInfoTwo.classList.add("hide");
+    }
+    console.log(window.scrollY);
+    console.log(window.innerWidth);
+    if (window.innerWidth > 1400 && window.scrollY > 2500) {
+      qnaContainerZero.classList.add("qnaAniZero");
 
-    qnaContainerOne.classList.add("qnaAniOne");
+      qnaContainerOne.classList.add("qnaAniOne");
 
-    qnaContainerTwo.classList.add("qnaAniTwo");
+      qnaContainerTwo.classList.add("qnaAniTwo");
 
-    qnaContainerThree.classList.add("qnaAniThree");
+      qnaContainerThree.classList.add("qnaAniThree");
 
-    qnaContainerFour.classList.add("qnaAniFour");
-    setTimeout(() => {
-      qnaContainerZero.classList.remove("hideqna");
-      qnaContainerOne.classList.remove("hideqna");
-      qnaContainerTwo.classList.remove("hideqna");
-      qnaContainerThree.classList.remove("hideqna");
-      qnaContainerFour.classList.remove("hideqna");
-    }, 0500);
-  } else if (window.innerWidth > 1090 && window.scrollY > 2300) {
-    qnaContainerZero.classList.add("qnaAniZero");
+      qnaContainerFour.classList.add("qnaAniFour");
+      setTimeout(() => {
+        qnaContainerZero.classList.remove("hideqna");
+        qnaContainerOne.classList.remove("hideqna");
+        qnaContainerTwo.classList.remove("hideqna");
+        qnaContainerThree.classList.remove("hideqna");
+        qnaContainerFour.classList.remove("hideqna");
+      }, 0500);
+    } else if (window.innerWidth > 1090 && window.scrollY > 2300) {
+      qnaContainerZero.classList.add("qnaAniZero");
 
-    qnaContainerOne.classList.add("qnaAniOne");
+      qnaContainerOne.classList.add("qnaAniOne");
 
-    qnaContainerTwo.classList.add("qnaAniTwo");
+      qnaContainerTwo.classList.add("qnaAniTwo");
 
-    qnaContainerThree.classList.add("qnaAniThree");
+      qnaContainerThree.classList.add("qnaAniThree");
 
-    qnaContainerFour.classList.add("qnaAniFour");
-    setTimeout(() => {
-      qnaContainerZero.classList.remove("hideqna");
-      qnaContainerOne.classList.remove("hideqna");
-      qnaContainerTwo.classList.remove("hideqna");
-      qnaContainerThree.classList.remove("hideqna");
-      qnaContainerFour.classList.remove("hideqna");
-    }, 0500);
-  } else if (window.innerWidth > 900 && window.scrollY > 4900) {
-    qnaContainerZero.classList.add("qnaAniZero");
-    qnaContainerOne.classList.add("qnaAniOne");
-    qnaContainerTwo.classList.add("qnaAniTwo");
-    qnaContainerThree.classList.add("qnaAniThree");
-    qnaContainerFour.classList.add("qnaAniFour");
-    setTimeout(() => {
-      qnaContainerZero.classList.remove("hideqna");
-      qnaContainerOne.classList.remove("hideqna");
-      qnaContainerTwo.classList.remove("hideqna");
-      qnaContainerThree.classList.remove("hideqna");
-      qnaContainerFour.classList.remove("hideqna");
-    }, 0500);
-  } else if (window.innerWidth > 600 && window.scrollY > 4300) {
-    qnaContainerZero.classList.add("qnaAniZero");
+      qnaContainerFour.classList.add("qnaAniFour");
+      setTimeout(() => {
+        qnaContainerZero.classList.remove("hideqna");
+        qnaContainerOne.classList.remove("hideqna");
+        qnaContainerTwo.classList.remove("hideqna");
+        qnaContainerThree.classList.remove("hideqna");
+        qnaContainerFour.classList.remove("hideqna");
+      }, 0500);
+    } else if (window.innerWidth > 900 && window.scrollY > 4900) {
+      qnaContainerZero.classList.add("qnaAniZero");
+      qnaContainerOne.classList.add("qnaAniOne");
+      qnaContainerTwo.classList.add("qnaAniTwo");
+      qnaContainerThree.classList.add("qnaAniThree");
+      qnaContainerFour.classList.add("qnaAniFour");
+      setTimeout(() => {
+        qnaContainerZero.classList.remove("hideqna");
+        qnaContainerOne.classList.remove("hideqna");
+        qnaContainerTwo.classList.remove("hideqna");
+        qnaContainerThree.classList.remove("hideqna");
+        qnaContainerFour.classList.remove("hideqna");
+      }, 0500);
+    } else if (window.innerWidth > 600 && window.scrollY > 4300) {
+      qnaContainerZero.classList.add("qnaAniZero");
 
-    qnaContainerOne.classList.add("qnaAniOne");
+      qnaContainerOne.classList.add("qnaAniOne");
 
-    qnaContainerTwo.classList.add("qnaAniTwo");
+      qnaContainerTwo.classList.add("qnaAniTwo");
 
-    qnaContainerThree.classList.add("qnaAniThree");
+      qnaContainerThree.classList.add("qnaAniThree");
 
-    qnaContainerFour.classList.add("qnaAniFour");
-    setTimeout(() => {
-      qnaContainerZero.classList.remove("hideqna");
-      qnaContainerOne.classList.remove("hideqna");
-      qnaContainerTwo.classList.remove("hideqna");
-      qnaContainerThree.classList.remove("hideqna");
-      qnaContainerFour.classList.remove("hideqna");
-    }, 0500);
-  } else if (window.innerWidth > 490 && window.scrollY > 3900) {
-    qnaContainerZero.classList.add("qnaAniZero");
+      qnaContainerFour.classList.add("qnaAniFour");
+      setTimeout(() => {
+        qnaContainerZero.classList.remove("hideqna");
+        qnaContainerOne.classList.remove("hideqna");
+        qnaContainerTwo.classList.remove("hideqna");
+        qnaContainerThree.classList.remove("hideqna");
+        qnaContainerFour.classList.remove("hideqna");
+      }, 0500);
+    } else if (window.innerWidth > 490 && window.scrollY > 3900) {
+      qnaContainerZero.classList.add("qnaAniZero");
 
-    qnaContainerOne.classList.add("qnaAniOne");
+      qnaContainerOne.classList.add("qnaAniOne");
 
-    qnaContainerTwo.classList.add("qnaAniTwo");
+      qnaContainerTwo.classList.add("qnaAniTwo");
 
-    qnaContainerThree.classList.add("qnaAniThree");
+      qnaContainerThree.classList.add("qnaAniThree");
 
-    qnaContainerFour.classList.add("qnaAniFour");
-    setTimeout(() => {
-      qnaContainerZero.classList.remove("hideqna");
-      qnaContainerOne.classList.remove("hideqna");
-      qnaContainerTwo.classList.remove("hideqna");
-      qnaContainerThree.classList.remove("hideqna");
-      qnaContainerFour.classList.remove("hideqna");
-    }, 0500);
-  } else if (window.innerWidth > 340 && window.scrollY > 4100) {
-    qnaContainerZero.classList.add("qnaAniZero");
+      qnaContainerFour.classList.add("qnaAniFour");
+      setTimeout(() => {
+        qnaContainerZero.classList.remove("hideqna");
+        qnaContainerOne.classList.remove("hideqna");
+        qnaContainerTwo.classList.remove("hideqna");
+        qnaContainerThree.classList.remove("hideqna");
+        qnaContainerFour.classList.remove("hideqna");
+      }, 0500);
+    } else if (window.innerWidth > 340 && window.scrollY > 4100) {
+      qnaContainerZero.classList.add("qnaAniZero");
 
-    qnaContainerOne.classList.add("qnaAniOne");
+      qnaContainerOne.classList.add("qnaAniOne");
 
-    qnaContainerTwo.classList.add("qnaAniTwo");
+      qnaContainerTwo.classList.add("qnaAniTwo");
 
-    qnaContainerThree.classList.add("qnaAniThree");
+      qnaContainerThree.classList.add("qnaAniThree");
 
-    qnaContainerFour.classList.add("qnaAniFour");
-    setTimeout(() => {
-      qnaContainerZero.classList.remove("hideqna");
-      qnaContainerOne.classList.remove("hideqna");
-      qnaContainerTwo.classList.remove("hideqna");
-      qnaContainerThree.classList.remove("hideqna");
-      qnaContainerFour.classList.remove("hideqna");
-    }, 0500);
-  } else if (window.scrollY < 100) {
-    qnaContainerZero.classList.remove("qnaAniZero");
-    qnaContainerZero.classList.add("hideqna");
-    qnaContainerOne.classList.remove("qnaAniOne");
-    qnaContainerOne.classList.add("hideqna");
-    qnaContainerTwo.classList.remove("qnaAniTwo");
-    qnaContainerTwo.classList.add("hideqna");
-    qnaContainerThree.classList.remove("qnaAniThree");
-    qnaContainerThree.classList.add("hideqna");
-    qnaContainerFour.classList.remove("qnaAniFour");
-    qnaContainerFour.classList.add("hideqna");
+      qnaContainerFour.classList.add("qnaAniFour");
+      setTimeout(() => {
+        qnaContainerZero.classList.remove("hideqna");
+        qnaContainerOne.classList.remove("hideqna");
+        qnaContainerTwo.classList.remove("hideqna");
+        qnaContainerThree.classList.remove("hideqna");
+        qnaContainerFour.classList.remove("hideqna");
+      }, 0500);
+    } else if (window.scrollY < 100) {
+      qnaContainerZero.classList.remove("qnaAniZero");
+      qnaContainerZero.classList.add("hideqna");
+      qnaContainerOne.classList.remove("qnaAniOne");
+      qnaContainerOne.classList.add("hideqna");
+      qnaContainerTwo.classList.remove("qnaAniTwo");
+      qnaContainerTwo.classList.add("hideqna");
+      qnaContainerThree.classList.remove("qnaAniThree");
+      qnaContainerThree.classList.add("hideqna");
+      qnaContainerFour.classList.remove("qnaAniFour");
+      qnaContainerFour.classList.add("hideqna");
+    }
   }
 });
 
@@ -231,15 +240,22 @@ for (card of cardArr) {
         `;
   cardContainer.appendChild(cardDiv);
   // Adding An Event Listener & Animation To Card Elements
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 120) {
-      cardDiv.classList.add("appearing");
-      cardDiv.classList.remove("hide");
-    } else if (window.scrollY < 10) {
-      cardDiv.classList.remove("appearing");
-      cardDiv.classList.add("hide");
-    }
-  });
+  if (
+    window.location.href === "https://smile4docho.netlify.app/" ||
+    window.location.href === "https://smile4docho.netlify.app/#" ||
+    window.location.href === "http://127.0.0.1:5500/index.html" ||
+    window.location.href === "http://127.0.0.1:5500/index.html#"
+  ) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 120) {
+        cardDiv.classList.add("appearing");
+        cardDiv.classList.remove("hide");
+      } else if (window.scrollY < 10) {
+        cardDiv.classList.remove("appearing");
+        cardDiv.classList.add("hide");
+      }
+    });
+  }
 }
 
 let plusMinusBtns = document.querySelectorAll(".qna-container");
