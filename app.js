@@ -238,7 +238,7 @@ for (card of cardArr) {
         <p>${description}</p>
       </section>
         `;
-  cardContainer.appendChild(cardDiv);
+
   // Adding An Event Listener & Animation To Card Elements
   if (
     window.location.href === "https://smile4docho.netlify.app/" ||
@@ -246,6 +246,7 @@ for (card of cardArr) {
     window.location.href === "http://127.0.0.1:5500/index.html" ||
     window.location.href === "http://127.0.0.1:5500/index.html#"
   ) {
+    cardContainer.appendChild(cardDiv);
     window.addEventListener("scroll", () => {
       if (window.scrollY > 120) {
         cardDiv.classList.add("appearing");
