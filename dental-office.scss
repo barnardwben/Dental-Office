@@ -1034,7 +1034,40 @@ body {
   }
 }
 
-// FOOTER
+// ABOUT ME SECTION
+.about-me-section {
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  padding: 10rem 0;
+  background: rgb(225, 240, 240);
+}
+
+.about-me-container {
+  position: relative;
+  width: 50%;
+  padding: 4rem;
+  margin: 0 auto;
+  transition: $transition3milli;
+  border: 0.5rem solid rgb(255, 255, 255);
+  color: $custom-grey;
+  background: url("https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAzfHx3aGl0ZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")
+    center center/cover no-repeat;
+  font-size: 1.35rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+}
+
+.dochoimg {
+  position: absolute;
+  top: -4rem;
+  right: -3rem;
+  // width: 200px;
+  border-radius: 50%;
+  border: 0.35rem solid rgb(255, 255, 255);
+  opacity: 0.95;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+}
+
+// FOOTER EVERY PAGE
 .footer-top-border {
   width: 100%;
   height: 50px;
@@ -1496,11 +1529,71 @@ body {
 
 .lrnBtn:hover {
   opacity: 0.8;
+  color: $custom-grey;
 }
 
 .lrnBtn:active {
   transform: translateY(1px);
   box-shadow: 0px 0px 0px black;
+}
+
+.insurance-section {
+  background: rgb(244, 252, 255);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.insurances-container {
+  width: 700px;
+  margin: 3rem auto;
+  border: 1rem solid rgb(47, 71, 94);
+  background: rgb(219, 238, 255);
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.363);
+  transition: $transition3milli;
+  color: $custom-grey;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 505px) {
+  .insurances-container {
+    width: 300px;
+    font-size: 1rem;
+    border: 0.5rem solid rgb(47, 71, 94);
+  }
+}
+
+.coverage-text {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.95rem;
+  color: $custom-grey;
+}
+
+@media only screen and (max-width: 505px) {
+  .coverage-text {
+    font-size: 1rem;
+  }
+}
+
+.telephone-num-insurance {
+  text-decoration: none;
+  background: rgb(130, 195, 211);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.233);
+  transition: $transition3milli;
+}
+
+.telephone-num-insurance:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.telephone-num-insurance:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 0 black;
 }
 
 // *********************** CONTACT.HTML******************************
