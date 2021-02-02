@@ -1162,6 +1162,39 @@ body {
   }
 }
 
+.about-me-section {
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  padding: 10rem 0;
+  background: #e1f0f0;
+}
+
+.about-me-container {
+  position: relative;
+  width: 50%;
+  padding: 4rem;
+  margin: 0 auto;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border: 0.5rem solid white;
+  color: #414964;
+  background: url("https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAzfHx3aGl0ZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") center center/cover no-repeat;
+  font-size: 1.35rem;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+}
+
+.dochoimg {
+  position: absolute;
+  top: -4rem;
+  right: -3rem;
+  border-radius: 50%;
+  border: 0.35rem solid white;
+  opacity: 0.95;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+}
+
 .footer-top-border {
   width: 100%;
   height: 50px;
@@ -1630,6 +1663,7 @@ body {
 
 .lrnBtn:hover {
   opacity: 0.8;
+  color: #414964;
 }
 
 .lrnBtn:active {
@@ -1637,6 +1671,71 @@ body {
           transform: translateY(1px);
   -webkit-box-shadow: 0px 0px 0px black;
           box-shadow: 0px 0px 0px black;
+}
+
+.insurance-section {
+  background: #f4fcff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.insurances-container {
+  width: 700px;
+  margin: 3rem auto;
+  border: 1rem solid #2f475e;
+  background: #dbeeff;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.363);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.363);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  color: #414964;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 505px) {
+  .insurances-container {
+    width: 300px;
+    font-size: 1rem;
+    border: 0.5rem solid #2f475e;
+  }
+}
+
+.coverage-text {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.95rem;
+  color: #414964;
+}
+
+@media only screen and (max-width: 505px) {
+  .coverage-text {
+    font-size: 1rem;
+  }
+}
+
+.telephone-num-insurance {
+  text-decoration: none;
+  background: #82c3d3;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.233);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.233);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.telephone-num-insurance:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.telephone-num-insurance:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
 #header-contact {
