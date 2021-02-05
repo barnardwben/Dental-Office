@@ -248,7 +248,8 @@ for (card of cardArr) {
     window.location.href === "https://smile4docho.netlify.app/index.html" ||
     window.location.href === "https://smile4docho.netlify.app/index.html#" ||
     window.location.href === "http://127.0.0.1:5500/index.html" ||
-    window.location.href === "http://127.0.0.1:5500/index.html#"
+    window.location.href === "http://127.0.0.1:5500/index.html#" ||
+    window.location.href === "http://127.0.0.1:5500"
   ) {
     cardContainer.appendChild(cardDiv);
     window.addEventListener("scroll", () => {
