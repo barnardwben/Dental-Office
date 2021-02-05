@@ -423,7 +423,6 @@ body {
 
       .service-box-colored {
         background: rgba(255, 255, 255, 0.884);
-        border: 0.8rem solid rgba(253, 198, 184, 0.753);
         color: rgb(65, 73, 100);
         padding-top: 20px;
         display: flex;
@@ -799,6 +798,32 @@ body {
   }
 }
 
+// ABOUT 
+.about {
+  .about-container {
+    .about-box {
+      background-color: rgba(81, 0, 230, 0.308);
+      border-radius: 7px; 
+      box-shadow: 1px 1px 15px rgba(209, 209, 209, 0.733); 
+      width: 100%; 
+      display: flex; 
+      margin-top: 50px;  
+      padding: 50px;  
+      #about-image {
+        width: 20%; 
+        height: 20%; 
+        border-radius: 50%;  
+        position:relative; 
+      }
+     
+     .about-text { 
+       width: 100%;
+       margin-left: 30px;  
+     }
+    }
+  } 
+}
+
 // FREQUENTLY ASKED QUESTIONS SECTION
 .fqa-container {
   color: rgb(65, 73, 100);
@@ -1067,7 +1092,7 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
 }
 
-// FOOTER EVERY PAGE
+// ****************** FOOTER EVERY PAGE *******************
 .footer-top-border {
   width: 100%;
   height: 50px;
@@ -1144,7 +1169,13 @@ body {
 
 .left-footer {
   justify-self: start;
-  align-self: end;
+  align-self: start;
+  transition: $transition3milli;
+}
+
+.footer-left-para {
+  font-size: 1.3rem;
+  color: rgb(205, 229, 252);
   transition: $transition3milli;
 }
 
