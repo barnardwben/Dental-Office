@@ -798,25 +798,64 @@ body {
   }
 }
 
-// ABOUT 
+// ABOUT
 .about {
   .about-container {
-      display: flex; 
-      margin-top: 70px;  
-      padding: 50px; 
-        #about-image {
-          width: 250px;   
-          box-shadow: -2.5rem -2.5rem 1px #ab6d5e;
-          margin-left: 30px; 
+    display: flex;
+    margin-top: 70px;
+    padding: 50px;
+    transition: $transition3milli;
+    #about-image {
+      width: 250px;
+      height: 310px;
+      box-shadow: -2.5rem -2.5rem 0px #ab6d5e;
+      margin-left: 30px;
+      transition: $transition3milli;
+    }
+    .about-text {
+      width: 100%;
+      margin-left: 30px;
+      text-align: justify;
+      color: $custom-grey;
+      transition: $transition3milli;
+      p {
+        transition: $transition3milli;
+      }
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    .about-container {
+      flex-direction: column;
+      padding: 0 auto;
+      #about-image {
+        margin-left: 55px;
+      }
+      .about-text {
+        margin-left: 0;
+        padding-top: 20px;
+        p {
+          width: 80%;
+          margin: 0 auto;
         }
-     .about-text { 
-       width: 100%;
-       margin-left: 30px;  
-       text-align: justify; 
-       color: $custom-grey; 
-     }
-  } 
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .about-container {
+      #about-image {
+        margin: 0 auto;
+        box-shadow: -1.5rem -1.5rem 0px #ab6d5e;
+      }
+      .about-text {
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
+
+// go from display: flex to display: block when media query below 750px
 
 // FREQUENTLY ASKED QUESTIONS SECTION
 .fqa-container {
