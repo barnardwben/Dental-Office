@@ -79,7 +79,7 @@ window.addEventListener("scroll", () => {
     }
     console.log(window.scrollY);
     console.log(window.innerWidth);
-    if (window.innerWidth > 1400 && window.scrollY > 2500) {
+    if (window.innerWidth > 1400 && window.scrollY > 2800) {
       qnaContainerZero.classList.add("qnaAniZero");
 
       qnaContainerOne.classList.add("qnaAniOne");
@@ -96,7 +96,7 @@ window.addEventListener("scroll", () => {
         qnaContainerThree.classList.remove("hideqna");
         qnaContainerFour.classList.remove("hideqna");
       }, 0500);
-    } else if (window.innerWidth > 1090 && window.scrollY > 2300) {
+    } else if (window.innerWidth > 1140 && window.scrollY > 2500) {
       qnaContainerZero.classList.add("qnaAniZero");
 
       qnaContainerOne.classList.add("qnaAniOne");
@@ -113,7 +113,24 @@ window.addEventListener("scroll", () => {
         qnaContainerThree.classList.remove("hideqna");
         qnaContainerFour.classList.remove("hideqna");
       }, 0500);
-    } else if (window.innerWidth > 900 && window.scrollY > 4900) {
+    } else if (window.innerWidth > 1090 && window.scrollY > 5700) {
+      qnaContainerZero.classList.add("qnaAniZero");
+
+      qnaContainerOne.classList.add("qnaAniOne");
+
+      qnaContainerTwo.classList.add("qnaAniTwo");
+
+      qnaContainerThree.classList.add("qnaAniThree");
+
+      qnaContainerFour.classList.add("qnaAniFour");
+      setTimeout(() => {
+        qnaContainerZero.classList.remove("hideqna");
+        qnaContainerOne.classList.remove("hideqna");
+        qnaContainerTwo.classList.remove("hideqna");
+        qnaContainerThree.classList.remove("hideqna");
+        qnaContainerFour.classList.remove("hideqna");
+      }, 0500);
+    } else if (window.innerWidth > 900 && window.scrollY > 5000) {
       qnaContainerZero.classList.add("qnaAniZero");
       qnaContainerOne.classList.add("qnaAniOne");
       qnaContainerTwo.classList.add("qnaAniTwo");
