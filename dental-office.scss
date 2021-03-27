@@ -253,9 +253,16 @@ body {
     .card-container {
       position: relative;
       top: 25rem;
-      background: linear-gradient(180deg, #fff, #fff, #fff, rgb(235, 219, 255));
+      background: linear-gradient(
+        180deg,
+        #fff,
+        #fff,
+        #fff,
+        rgb(218, 238, 255),
+        rgb(218, 238, 255)
+      );
       margin: 5rem 0rem;
-      padding: 2rem 7rem;
+      padding: 2rem 7rem 12rem 7rem;
       display: flex;
       justify-content: space-between;
       text-align: center;
@@ -404,21 +411,47 @@ body {
     }
   }
 
+  .ser-section-container {
+    width: 100%;
+    background: linear-gradient(
+      360deg,
+      #fff,
+      rgb(218, 238, 255),
+      rgb(218, 238, 255),
+      rgb(218, 238, 255)
+    );
+  }
+
   .services {
-    margin-top: 400px;
+    width: 80%;
+    margin: 400px auto 10rem auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.233);
+    position: relative;
     .service-container {
       display: grid;
+      // border-radius: 15px;
       grid-template-columns: 50% 50%;
       margin-top: 40px;
       height: auto;
 
       .bg-img {
         background: url("images/toothbrushes.jpg") center center/cover no-repeat;
+        border-top-left-radius: 15px;
       }
 
       .bg-img-two {
         background: url("images/woman-holding-dentist-tools.jpg") center
           center/cover no-repeat;
+        border-bottom-right-radius: 15px;
+      }
+
+      .rad-1 {
+        border-top-left-radius: 15px;
+      }
+
+      .rad-2 {
+        border-bottom-right-radius: 15px;
       }
 
       .service-box-colored {
@@ -436,7 +469,7 @@ body {
         transition: $transition3milli;
 
         .text-center {
-          font-size: 3rem;
+          font-size: 2.5rem;
           margin: 2rem 0 0 0;
           transition: $transition3milli;
         }
@@ -449,9 +482,13 @@ body {
         }
 
         p {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           width: 100%;
           transition: $transition3milli;
+        }
+
+        .service-box-img {
+          border-radius: 15px;
         }
 
         @media only screen and (max-width: 1351px) {
@@ -517,9 +554,10 @@ body {
             margin: 0rem auto 0.5rem auto;
           }
           p {
-            line-height: 1.2rem;
+            line-height: 1.6rem;
             width: 100%;
             font-size: 1.25rem;
+            margin: 0 0 1rem 0;
             text-align: center;
           }
         }
@@ -563,7 +601,7 @@ body {
           background: rgb(255, 255, 255);
           color: rgb(65, 73, 100);
           width: 100%;
-          margin: 1rem;
+          margin: 0.5rem;
           padding: 0.1rem;
           display: grid;
           grid-template-columns: 1fr;
@@ -748,6 +786,14 @@ body {
           object-fit: contain;
           opacity: 0.8;
           transition: $transition3milli;
+        }
+
+        .sb1 {
+          border-top-right-radius: 15px;
+        }
+
+        .sb2 {
+          border-bottom-left-radius: 15px;
         }
       }
 
