@@ -449,7 +449,7 @@ body {
 
 #main-index .services {
   width: 80%;
-  margin: 400px auto 10rem auto;
+  margin: 400px auto 4rem auto;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.233);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.233);
@@ -908,29 +908,42 @@ body {
   text-align: center;
   font-size: 3rem;
   color: #414964;
+  position: relative;
+  top: 120px;
+}
+
+.about .contact-hr {
+  position: relative;
+  top: 120px;
 }
 
 .about .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+  margin-bottom: 120px;
 }
 
 .about .about-container #about-image {
-  width: 600px;
-  height: 320px;
-  border-radius: 9px;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  left: 18%;
+  top: 160px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
 .about .about-container .about-text {
-  width: 100%;
-  margin-left: -50px;
-  margin-top: 150px;
+  width: 70%;
+  margin: 0 auto;
   text-align: justify;
   color: #414964;
   -webkit-transition: 0.3s all ease-in-out;
@@ -938,7 +951,8 @@ body {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.171);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.171);
   border-radius: 9px;
-  padding: 30px;
+  padding: 50px;
+  padding-top: 140px;
   background-color: white;
 }
 
@@ -947,7 +961,7 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 945px) {
   .about .about-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -956,11 +970,18 @@ body {
     padding: 0 auto;
   }
   .about .about-container #about-image {
-    margin-left: 55px;
+    width: 500px;
+    height: 340px;
+    margin: auto;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.171);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.171);
+    z-index: 1;
   }
   .about .about-container .about-text {
-    margin-left: 0;
-    padding-top: 20px;
+    margin: auto;
+    margin-top: -40px;
+    padding-top: 70px;
+    z-index: 0;
   }
   .about .about-container .about-text p {
     width: 80%;
