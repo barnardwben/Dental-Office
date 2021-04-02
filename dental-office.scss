@@ -869,6 +869,8 @@ body {
       position: relative; 
       left: 18%; 
       top: 160px; 
+      -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.191));
+      filter:         drop-shadow(0 0 15px rgba(0, 0, 0, 0.191)); 
       transition: $transition3milli;
     }
     .about-text {
@@ -887,42 +889,42 @@ body {
       }
     }
   }
-  @media only screen and (max-width: 945px) {
-    .about-container {
-      flex-direction: column;
-      padding: 0 auto;
-      #about-image {
-        width: 500px;
-        height: 340px; 
-        margin: auto; 
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.171);
-        z-index: 1; 
-      }
-      .about-text {
-        margin: auto; 
-        margin-top: -40px; 
-        padding-top: 70px;
-        z-index: 0;
-        p {
-          width: 80%;
-          margin: 0 auto;
-        }
+  @media only screen and (max-width: 1280px) {
+   .about-container {
+     #about-image {
+      left: 22%; 
+      top: 170px; 
+      width: 350px;
+      height: 250px; 
       }
     }
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 1100px) {
+    h3 {
+      position: unset; 
+      margin-top: 70px; 
+    }
+    .contact-hr {
+      position: unset; 
+      margin-bottom: 70px; 
+    }
     .about-container {
       #about-image {
-        margin: 0 auto;
-        box-shadow: -1.5rem -1.5rem 0px #ab6d5e;
-      }
-      .about-text {
-        p {
-          width: 100%;
-        }
+        position: unset; 
+        margin-bottom: -100px; 
       }
     }
   }
+  @media only screen and (max-width: 735px) {
+    .about-container {
+      .about-text {
+        width: 90%; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        padding-bottom: 20px; 
+      }
+     }
+   }
 }
 
 // go from display: flex to display: block when media query below 750px
@@ -1710,7 +1712,7 @@ body {
 }
 
 .contact-hr {
-  width: 7%;
+  width: 100px;
   margin: 10px auto;
   padding: 1.5px 0;
   // border-radius: 50%;
