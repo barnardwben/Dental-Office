@@ -483,6 +483,25 @@ body {
   border-bottom-right-radius: 15px;
 }
 
+@media only screen and (max-width: 1161px) {
+  #main-index .services .service-container .bg-img {
+    background: url("images/toothbrushes.jpg") center center/cover no-repeat;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  #main-index .services .service-container .bg-img-two {
+    background: url("images/woman-holding-dentist-tools.jpg") center center/cover no-repeat;
+    border-bottom-right-radius: 0px;
+  }
+  #main-index .services .service-container .rad-1 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  #main-index .services .service-container .rad-2 {
+    border-bottom-right-radius: 0px;
+  }
+}
+
 #main-index .services .service-container .service-box-colored {
   background: rgba(255, 255, 255, 0.884);
   color: #414964;
@@ -535,18 +554,19 @@ body {
 
 @media only screen and (max-width: 1351px) {
   #main-index .services .service-container .service-box-colored .text-center {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   #main-index .services .service-container .service-box-colored p {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (max-width: 1101px) {
+@media only screen and (max-width: 1161px) {
   #main-index .services .service-container .service-box-colored .text-center {
     font-size: 3.5rem;
   }
   #main-index .services .service-container .service-box-colored p {
+    font-size: 1.5rem;
     width: 70%;
   }
 }
@@ -698,9 +718,9 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
-@media only screen and (max-width: 1351px) {
+@media only screen and (max-width: 1421px) {
   #main-index .services .service-container .service-box-colored .ser-border {
-    width: 520px;
+    width: 500px;
     margin: 0.8rem;
   }
   #main-index .services .service-container .service-box-colored .ser-container {
@@ -709,7 +729,7 @@ body {
     padding: 0.4rem;
   }
   #main-index .services .service-container .service-box-colored .service-box-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 1.2rem 0 0.5rem 0;
     text-align: center;
     color: #333333;
@@ -727,7 +747,36 @@ body {
   }
 }
 
-@media only screen and (max-width: 1101px) {
+@media only screen and (max-width: 1351px) {
+  #main-index .services .service-container .service-box-colored .ser-border {
+    width: 450px;
+    margin: 0.8rem;
+  }
+  #main-index .services .service-container .service-box-colored .ser-container {
+    width: 100%;
+    margin: 1rem;
+    padding: 0.4rem;
+  }
+  #main-index .services .service-container .service-box-colored .service-box-text {
+    font-size: 1rem;
+    margin: 1.2rem 0 0.5rem 0;
+    text-align: center;
+    color: #333333;
+  }
+  #main-index .services .service-container .service-box-colored .service-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #main-index .services .service-container .service-box-colored .service-list li {
+    font-size: 0.8rem;
+    margin: 0 1rem;
+    color: #494949;
+  }
+}
+
+@media only screen and (max-width: 1161px) {
   #main-index .services .service-container .service-box-colored .ser-border {
     width: 620px;
     margin: 0.8rem;
@@ -852,18 +901,30 @@ body {
   border-bottom-left-radius: 15px;
 }
 
+@media only screen and (max-width: 1161px) {
+  #main-index .services .service-container .service-box-white .sb1 {
+    border-top-right-radius: 0px;
+  }
+  #main-index .services .service-container .service-box-white .sb2 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
 @media only screen and (max-width: 501px) {
   #main-index .services .service-container .service-box-white .service-box-img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 70% 50%;
+       object-position: 70% 50%;
     border: none;
     opacity: 0.8;
   }
 }
 
-@media only screen and (max-width: 1101px) {
+@media only screen and (max-width: 1161px) {
   #main-index .services .service-container {
     display: -ms-grid;
     display: grid;
@@ -900,6 +961,7 @@ body {
 
 @media only screen and (max-width: 512px) {
   #main-index .services {
+    width: 100%;
     margin-top: 12.5rem;
   }
 }
@@ -1034,10 +1096,17 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .fqa-container .left-p {
+  .fqa-container .fqa-left {
+    width: 100%;
+  }
+  .fqa-container .fqa-left .left-p {
+    width: 100%;
     font-size: 1.5rem;
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
+  }
+  .fqa-container .fqa-right {
+    width: 100%;
   }
 }
 
@@ -1095,7 +1164,7 @@ body {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.178);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.178);
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0rem;
   border-radius: 10px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -1872,5 +1941,65 @@ body {
   background: none !important;
   height: 500px;
   width: 901px;
+}
+
+@media only screen and (max-width: 940px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    border-radius: 10px;
+    height: 500px;
+    width: 701px;
+    margin: 50px auto;
+    -webkit-box-shadow: 0px 0px 15px #00000020;
+            box-shadow: 0px 0px 15px #00000020;
+  }
+  .gmap_canvas {
+    border-radius: 10px;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 701px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    border-radius: 10px;
+    height: 500px;
+    width: 551px;
+    margin: 50px auto;
+    -webkit-box-shadow: 0px 0px 15px #00000020;
+            box-shadow: 0px 0px 15px #00000020;
+  }
+  .gmap_canvas {
+    border-radius: 10px;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 551px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    border-radius: 10px;
+    height: 500px;
+    width: 100%;
+    margin: 50px auto;
+    -webkit-box-shadow: 0px 0px 15px #00000020;
+            box-shadow: 0px 0px 15px #00000020;
+  }
+  .gmap_canvas {
+    border-radius: 10px;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=dental-office.css.map */

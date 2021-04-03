@@ -454,6 +454,30 @@ body {
         border-bottom-right-radius: 15px;
       }
 
+      @media only screen and (max-width: 1161px) {
+        .bg-img {
+          background: url("images/toothbrushes.jpg") center center/cover
+            no-repeat;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+
+        .bg-img-two {
+          background: url("images/woman-holding-dentist-tools.jpg") center
+            center/cover no-repeat;
+          border-bottom-right-radius: 0px;
+        }
+
+        .rad-1 {
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+
+        .rad-2 {
+          border-bottom-right-radius: 0px;
+        }
+      }
+
       .service-box-colored {
         background: rgba(255, 255, 255, 0.884);
         color: rgb(65, 73, 100);
@@ -493,20 +517,21 @@ body {
 
         @media only screen and (max-width: 1351px) {
           .text-center {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
           }
 
           p {
-            font-size: 1.4rem;
+            font-size: 0.8rem;
           }
         }
 
-        @media only screen and (max-width: 1101px) {
+        @media only screen and (max-width: 1161px) {
           .text-center {
             font-size: 3.5rem;
           }
 
           p {
+            font-size: 1.5rem;
             width: 70%;
           }
         }
@@ -629,9 +654,9 @@ body {
             transition: $transition3milli;
           }
         }
-        @media only screen and (max-width: 1351px) {
+        @media only screen and (max-width: 1421px) {
           .ser-border {
-            width: 520px;
+            width: 500px;
             margin: 0.8rem;
           }
 
@@ -642,7 +667,7 @@ body {
           }
 
           .service-box-text {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin: 1.2rem 0 0.5rem 0;
             text-align: center;
             color: rgb(51, 51, 51);
@@ -658,8 +683,37 @@ body {
             }
           }
         }
+        @media only screen and (max-width: 1351px) {
+          .ser-border {
+            width: 450px;
+            margin: 0.8rem;
+          }
 
-        @media only screen and (max-width: 1101px) {
+          .ser-container {
+            width: 100%;
+            margin: 1rem;
+            padding: 0.4rem;
+          }
+
+          .service-box-text {
+            font-size: 1rem;
+            margin: 1.2rem 0 0.5rem 0;
+            text-align: center;
+            color: rgb(51, 51, 51);
+          }
+
+          .service-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            li {
+              font-size: 0.8rem;
+              margin: 0 1rem;
+              color: rgb(73, 73, 73);
+            }
+          }
+        }
+
+        @media only screen and (max-width: 1161px) {
           .ser-border {
             width: 620px;
             margin: 0.8rem;
@@ -795,6 +849,17 @@ body {
         .sb2 {
           border-bottom-left-radius: 15px;
         }
+
+        @media only screen and (max-width: 1161px) {
+          .sb1 {
+            border-top-right-radius: 0px;
+          }
+
+          .sb2 {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+        }
       }
 
       @media only screen and (max-width: 501px) {
@@ -803,13 +868,14 @@ body {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: 70% 50%;
             border: none;
             opacity: 0.8;
           }
         }
       }
     }
-    @media only screen and (max-width: 1101px) {
+    @media only screen and (max-width: 1161px) {
       .service-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -839,6 +905,7 @@ body {
   }
   @media only screen and (max-width: 512px) {
     .services {
+      width: 100%;
       margin-top: 12.5rem;
     }
   }
@@ -847,30 +914,30 @@ body {
 // ABOUT
 .about {
   h3 {
-    text-align: center; 
-    font-size: 3rem; 
+    text-align: center;
+    font-size: 3rem;
     color: rgb(65, 73, 100);
     position: relative;
-    top: 120px;  
+    top: 120px;
   }
   .contact-hr {
     position: relative;
-    top: 120px; 
+    top: 120px;
   }
   .about-container {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     transition: $transition3milli;
-    margin-bottom: 120px; 
+    margin-bottom: 120px;
     #about-image {
       width: 400px;
-      height: 300px; 
-      margin: auto; 
-      position: relative; 
-      left: 18%; 
-      top: 160px; 
+      height: 300px;
+      margin: auto;
+      position: relative;
+      left: 18%;
+      top: 160px;
       -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.191));
-      filter:         drop-shadow(0 0 15px rgba(0, 0, 0, 0.191)); 
+      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.191));
       transition: $transition3milli;
     }
     .about-text {
@@ -880,9 +947,9 @@ body {
       color: $custom-grey;
       transition: $transition3milli;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.171);
-      border-radius: 9px; 
+      border-radius: 9px;
       padding: 50px;
-      padding-top: 140px; 
+      padding-top: 140px;
       background-color: white;
       p {
         transition: $transition3milli;
@@ -890,41 +957,41 @@ body {
     }
   }
   @media only screen and (max-width: 1280px) {
-   .about-container {
-     #about-image {
-      left: 22%; 
-      top: 170px; 
-      width: 350px;
-      height: 250px; 
+    .about-container {
+      #about-image {
+        left: 22%;
+        top: 170px;
+        width: 350px;
+        height: 250px;
       }
     }
   }
   @media only screen and (max-width: 1100px) {
     h3 {
-      position: unset; 
-      margin-top: 70px; 
+      position: unset;
+      margin-top: 70px;
     }
     .contact-hr {
-      position: unset; 
-      margin-bottom: 70px; 
+      position: unset;
+      margin-bottom: 70px;
     }
     .about-container {
       #about-image {
-        position: unset; 
-        margin-bottom: -100px; 
+        position: unset;
+        margin-bottom: -100px;
       }
     }
   }
   @media only screen and (max-width: 735px) {
     .about-container {
       .about-text {
-        width: 90%; 
-        padding-left: 20px; 
-        padding-right: 20px; 
-        padding-bottom: 20px; 
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
       }
-     }
-   }
+    }
+  }
 }
 
 // go from display: flex to display: block when media query below 750px
@@ -962,9 +1029,18 @@ body {
   }
 
   @media only screen and (max-width: 500px) {
-    .left-p {
-      font-size: 1.5rem;
-      transition: $transition3milli;
+    .fqa-left {
+      width: 100%;
+
+      .left-p {
+        width: 100%;
+        font-size: 1.5rem;
+        transition: $transition3milli;
+      }
+    }
+
+    .fqa-right {
+      width: 100%;
     }
   }
 }
@@ -1018,7 +1094,7 @@ body {
   background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.178);
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0rem;
   border-radius: 10px;
   transition: $transition3milli;
 }
@@ -1737,4 +1813,64 @@ body {
   background: none !important;
   height: 500px;
   width: 901px;
+}
+
+@media only screen and (max-width: 940px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    border-radius: 10px;
+    height: 500px;
+    width: 701px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px #00000020;
+  }
+
+  .gmap_canvas {
+    border-radius: 10px;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 701px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    border-radius: 10px;
+    height: 500px;
+    width: 551px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px #00000020;
+  }
+
+  .gmap_canvas {
+    border-radius: 10px;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 551px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    border-radius: 10px;
+    height: 500px;
+    width: 100%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px #00000020;
+  }
+
+  .gmap_canvas {
+    border-radius: 10px;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+  }
 }
